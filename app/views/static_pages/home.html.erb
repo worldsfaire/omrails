@@ -1,0 +1,16 @@
+<% if user_signed_in? %>
+<h1>You've successfully signed in like a BAWSE.</h1>
+<center><img alt="" src="http://hiphopspy.com/wp-content/uploads/2009/05/rick-ross-belly-psd5392.png" title="center" class="aligncenter" width="500" height="16" /></center>
+<h1>You look tasty.</h1>
+<% else %>
+<div class="center hero-unit">
+    <h1>Welcome to One Month Rails.</h1>
+
+    <h2>
+      Go ahead and click that sign up link. Go on wicho fawyne self.
+    </h2>
+
+    <%= link_to "Sign up now!", new_user_registration_path, 
+                                class: "btn btn-large btn-primary" %>
+</div>
+<% end %>
